@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="intro">
+        <p>Hello this is a p tag</p>
+    </div>
+
+    <script>
+        let elm = document.getElementById("intro");
+
+        let h1 = document.createElement('h2');  //createElement banate hai
+        
+        let text = document.createTextNode("this is h1 tag");
+       
+      
+        h1.appendChild(text);
+
+        elm.appendChild(h1);  //element ko page me dikhata hai
+        
+    </script>
+</body>
+</html>
