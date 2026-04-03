@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img  id="image1" width="500" src="" alt="">
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function(){
+            console.log("DOM tree created");
+        });
+
+        let img = document.getElementById("image1");
+
+        img.addEventListener('Load', function(){
+            console.log("Fully loaded");
+        });
+    </script>
+</body>
+</html>
