@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript</h2>
+
+    <script>
+
+        let book = {
+            name: "advance js",
+            page: 200,
+            price: 150,
+
+            publication: {
+                pub_name: "btech",
+                year: 2021
+            }
+        }; 
+        let {name, page, price, publication: {pub_name, year}} = book
+        console.log(book)
+    </script>
+
+</body>
+</html>
