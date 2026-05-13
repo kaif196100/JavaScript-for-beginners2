@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <script>
+        // even number 
+        const numbers = [1, 2, 3, 4, 5, 6];
+
+        const even = numbers.filter(isEven);
+
+        function isEven(value){
+            return value % 2 === 0;
+        }
+        console.log(even);
+
+        
+        //first code
+        const people = [
+        {
+            name: 'florin',
+            age: 26
+        },
+        {
+            name: 'Ivan',
+            age: 18
+        },
+        {
+            name: 'jai',
+            age: 20
+        }
+        ];
+        const adults = people.filter(person => person.age >= 18);
+        console.log(adults);
+
+        // second code
+        const number = [1, 2, 3, 4, 5, 6, 1, 7, 5, 9,];
+        const nums = number.filter((value, index, arr) => {
+            return arr.indexOf(value) === index;
+        });
+        console.log(nums);
+
+        
+    </script>
+</body>
+</html>
