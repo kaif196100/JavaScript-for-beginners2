@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <script>
+        //sort methods
+        const names = ['Florin', 'Lian', 'Jai', 'Ivan'];
+
+        names.sort();
+        console.log(names);
+
+        // first code 
+        const numbers = [74, 18, 10, 54, 75, 105]
+        numbers.sort(compare);
+        console.log(numbers);
+
+        function compare(a, b){
+            //1. < 0 ... a comes first 
+            //2. 0 ... nothing will be changed 
+            //3. > 0 .... b comes first 
+            return a - b ;
+        }
+
+        // second code 
+        const products = [
+        {
+            name: 'laptop',
+            price: 1000
+        },
+        {
+            name: 'desktop',
+            price: 1500
+        },
+        {
+           name: 'phone',
+           price: 500
+        }];
+
+        products.sort((a, b) =>
+            a.price - a.price
+        )
+        console.log(products);
+
+    </script>
+</body>
+</html>
