@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <script>
+        const numbers = [1, 2, 3, 4, 5];
+        numbers.fill(0, 1, 4);
+        console.log(numbers)
+
+        // first code 
+        function fillInnumbers(n) {
+            return Array(n)
+            .fill(0)
+            .map((_, idx) => idx + 1);
+
+        }
+        console.log(fillInnumbers(10))
+    </script>
+</body>
+</html>
