@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <script>
+        // find Method
+        const name = ['Florin', 'Ivan', 'Liam']
+        const res = name.find(findIvan)
+
+        function findIvan(item){
+            return item === 'Ivan';
+        }
+        console.log(res)
+
+        // first code
+        const persons = [
+        {
+            name: 'Florin'
+        },
+        {
+            name: 'Ivan'
+        },
+        {
+            name: 'Liam',
+        }];
+
+         const names = persons.find(liam)
+
+         function liam(persons){
+            return persons.name === 'Liam'
+         }
+         console.log(names)
+    </script>
+</body>
+</html>
