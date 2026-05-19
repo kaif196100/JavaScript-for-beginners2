@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <script>
+    const numbers = [1, 2, 3, 4];
+    const res = numbers.some(greaterThanFour);
+
+    function greaterThanFour(item){
+        return item > 4;
+    }
+    console.log(res)
+
+     // second code 
+    
+    const persons = [
+        {
+            name: 'Florin',
+            age: 25
+        },
+        {
+            name: 'Ivan',
+            age: 45
+        },
+        {
+            name: 'Liam',
+            age: 42
+        },
+        {
+            name: 'Jai', 
+            age: 20
+        }
+        ];
+
+        const name = persons.some(isAdult)
+
+         function isAdult(person){
+        return person.age >= 18
+    }
+    console.log(name)
+    </script>
+</body>
+</html>
