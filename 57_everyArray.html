@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello world </h1>
+    <script>
+        // every
+        const numbers = [1, 2, 3, 4, 5];
+        const res = numbers.every(isPositive);
+        
+        function isPositive(item){
+            return item > 0;
+        }
+        console.log(res);
+
+        // first code
+        const persons = [
+        {
+            name: 'Florin'
+        },
+        {
+            name: 'Ivan'
+        },
+        {
+            name: 'Liam'
+        },
+        {
+            surname: 'Jai'
+        }
+        ];
+        const name = persons.every(person => person.name !== undefined);
+        console.log(name)
+    </script>
+</body>
+</html>
