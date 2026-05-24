@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <script>
+        
+        //  referenceString.localCompare (compareString)
+        //  referenceString.localCompare (compareString, locales)
+
+        const res1 = 'a'.localeCompare('b')
+        console.log(res1)
+        // output = negative -1
+
+        const res2 = 'b'.localeCompare('a')
+        console.log(res2)
+        // output = positive +1
+
+
+        const res3 = 'a'.localeCompare('a')
+        console.log(res3)
+        // output = 0 
+
+        const res4 = 'ä'.localeCompare('z', 'de')
+        console.log(res4)
+        // output = negative 1
+
+
+        const res5 = 'ä'.localeCompare('z','sv')
+        console.log(res5)
+        // output = positive 1 
+       
+    </script>
+</body>
+</html>

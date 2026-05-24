@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <script>
+        const text = 'The rain in SPAIN staye mainly inthe plain';
+
+        const res = text.search('in');
+        const res1 = text.search(/ in/);
+        const res2 = text.search(/AIN/);
+        const res3 = text.search(/AIN/i);
+        const res4 = text.search(/w/);
+        console.log(res);
+        console.log(res1);
+        console.log(res2);
+        console.log(res3);
+        console.log(res4);
+    </script>
+</body>
+</html>
