@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <script>
+        // Match method
+        const text = 'The rain in SPAIN staye mainly inthe plain';
+        const res = text.match('ain');
+        console.log(res);
+        const res1 = text.match(/ain/);
+        console.log(res1);
+        const res2 = text.match(/AIN/);
+        console.log(res2);
+        const res3 = text.match(/AIN/gi);
+        console.log(res3);
+        const res4 = text.match(/AIN/g);
+        console.log(res4);
+        const res5 = text.match(/w/);
+        console.log(res5);
+        
+        // MatchAll Method
+        const index = 'The rain in SPAIN staye mainly inthe plain';
+        const idx = index.matchAll(/in/g);
+        console.log(idx);
+
+
+    </script>
+</body>
+</html>
