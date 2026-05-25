@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>heoll world </h1>
+    <script>
+        // replace Method
+        const text = 'Mr Blue has a blue house and a blue car';
+        const res = text.replace('blue', 'red');
+        console.log(res);
+
+
+        const text1 = 'Mr Blue has a blue house and a blue car';
+        const result = text1.replace('blue', match => {
+            return match.toUpperCase();
+        });
+        console.log(result);
+
+        // replaceAll Method
+
+        const string = 'Mr Blue has a blue house and a blue car';
+        const str = string.replaceAll('blue', 'RED');
+        console.log(str);
+
+        const string1 = 'Mr Blue has a blue house and a blue car';
+        const str1 = string1.replace(/blue/gi, (match) => {
+            return match.toUpperCase();
+        });
+        console.log(str1);
+    </script>
+</body>
+</html>
